@@ -25,7 +25,7 @@ function App() {
     }
   }, [result]);
 
-  const chooseSquare = (square) => {
+  const chooseSquare = (square: any) => {
     setBoard(
       board.map((val, indx) => {
         if (indx == square && val == "") {
